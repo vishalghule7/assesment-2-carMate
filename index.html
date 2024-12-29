@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarMate - Best place to buy your next car</title>
+
+    <link rel="icon" href="assets/images/car logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="#" class="logo"> <span>Car</span>Mate</a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Listings</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div id="login-btn">
+        <button class="btn">Login</button>
+        <i class="far fa-user"></i>
+      </div>
+    </header>
+
+    <!-- form -->
+    <div class="login-form-container">
+      <span class="fas fa-times" id="close-login-form"></span>
+      <form action="">
+        <h3>User Login</h3>
+        <input type="email" placeholder="Enter email" class="box" />
+        <input type="password" placeholder="password" class="box" />
+        <p>Forget password <a href="#">click here</a></p>
+        <input type="submit" value="login now" class="btn" />
+        <p>or login with</p>
+        <div class="buttons">
+          <a href="#" class="btn">google</a>
+          <a href="#" class="btn">facebook</a>
+        </div>
+        <p>don't have an account <a href="#">create new</a></p>
+      </form>
+    </div>
+
+    <!-- hero section -->
+    <!-- <section class="home" id="home">
+      <h1 class="home-parallax" data-speed="-3">Get your car with us</h1>
+      <img
+        class="home-parallax"
+        data-speed="-5"
+        src="https://static7.depositphotos.com/1062035/748/i/450/depositphotos_7486411-stock-photo-front-side-view-of-cherry.jpg"
+        alt=""
+      />
+      <a class="btn home-parallax" data-speed="-7" href="#">Explore cars</a>
+    </section> -->
+
+    <!-- hero section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1 class="title">Find Your Dream Car</h1>
+        <p class="tagline">
+          Discover the best deals and latest models at unbeatable prices.
+        </p>
+        <a class="btn" href="#">Explore Cars</a>
+      </div>
+      <div class="home-image">
+        <img
+          src="https://static7.depositphotos.com/1062035/748/i/450/depositphotos_7486411-stock-photo-front-side-view-of-cherry.jpg"
+          alt="Car"
+        />
+      </div>
+    </section>
+
+    <!-- slider-logo  -->
+    <section>
+      <h1 class="heading">Top brands</h1>
+      <div
+        class="slider-logo"
+        id="slider-2"
+        reversed="true"
+        style="--width: 150px; --height: 150px; --quantity: 9"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img
+              src="https://th.bing.com/th/id/OIP.54sLhMfrZ_Ou0hi-sVyilwHaGH?w=224&h=186&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="Toyota Logo"
+            />
+          </div>
+          <div class="item" style="--position: 2">
+            <img
+              src="https://th.bing.com/th/id/OIP.nA-Cc5eykcXFr91RQG5gJgHaFj?w=220&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="jaguar Logo"
+            />
+          </div>
+          <div class="item" style="--position: 3">
+            <img
+              src="https://th.bing.com/th/id/OIP.nrHBz6F7p9tPvZBvDD3TzAHaFe?w=256&h=189&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="honda Logo"
+            />
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="https://th.bing.com/th/id/OIP.SsmoqDFjx5GEUL9Sgl6aZQHaHZ?w=187&h=186&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="Volkswagen_logo Logo"
+            />
+          </div>
+          <div class="item" style="--position: 5">
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/land-rover-1-logo-png-transparent.png"
+              alt="land rover Logo"
+            />
+          </div>
+          <div class="item" style="--position: 6">
+            <img
+              src="https://th.bing.com/th/id/OIP.Cta-CMAXxwKOpr8iKEYZjwHaEE?w=308&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="audi Logo"
+            />
+          </div>
+          <div class="item" style="--position: 7">
+            <img
+              src="https://th.bing.com/th/id/OIP.gs6t-lvUao8F8QWmsj_ATgHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="mahindra Logo"
+            />
+          </div>
+          <div class="item" style="--position: 8">
+            <img
+              src="https://th.bing.com/th/id/OIP.UiqgtwAJrKdk_YLFhO9VgwHaC9?w=293&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="tata Logo"
+            />
+          </div>
+          <div class="item" style="--position: 9">
+            <img
+              src="https://th.bing.com/th/id/OIP.uz0W1GhPhVt22PyQx8KnCQHaGN?w=221&h=184&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="vovlo Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- icons
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+          <h3>100+</h3>
+          <p>branches</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+          <h3>1000+</h3>
+          <p>happy customers</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>1300+</h3>
+          <p>cars sold</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+          <h3>200+</h3>
+          <p>new cars</p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- slider -->
+    <section class="vehicles" id="vehicles">
+      <h1 class="heading"><span>popular vehicles</span></h1>
+      <div class="swiper vehicles-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://rizkipratamarentcar.bisniz.co/wp-content/uploads/sites/128/2024/01/zenix-depan-kiri-1.png"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="details.html" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img alt="" src="https://imageshack.com/a/img924/2016/8WhqKj.png" />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://resource.digitaldealer.com.au/image/9338646145d6c76c68f1b7000905082_0_0.jpg"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://th.bing.com/th/id/OIP.UEomOscv_PUvXGoZYH4wkwHaHa?pid=ImgDet&w=190&h=190&c=7&dpr=1.4"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://i.pinimg.com/originals/70/7f/75/707f7520a6b1cad721c9a0b32296da9b.jpg"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://rizkipratamarentcar.bisniz.co/wp-content/uploads/sites/128/2024/01/zenix-depan-kiri-1.png"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              alt=""
+              src="https://th.bing.com/th/id/R.962b7817b4bdf20cb87798070b3ca259?rik=qjQQgqzw8udY1w&riu=http%3a%2f%2fimages.carandbike.com%2fcar-images%2fbig%2ftoyota%2fland-cruiser-prado%2ftoyota-land-cruiser-prado.jpg%3fv%3d3&ehk=JGmyqYVRC9m14tbnq9n4nLLEYJ5bMsT09tAP%2bkW9ADw%3d&risl=&pid=ImgRaw&r=0"
+            />
+            <div class="content">
+              <h3>new model</h3>
+              <div class="price"><span>price:</span> &#8377;650000</div>
+              <p>
+                new
+                <span class="fas fa-circle"></span>2023
+                <span class="fas fa-circle"></span>manual
+                <span class="fas fa-circle"></span>deisel
+                <span class="fas fa-circle"></span>200km
+              </p>
+              <a href="#" class="btn">check out</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- listings section  -->
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>featured cars</span></h1>
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img
+              src="https://img.freepik.com/free-psd/yellow-isolated-car_23-2151852890.jpg?t=st=1734941197~exp=1734944797~hmac=36d26ab1cc0e5a6d18e62e367162fc876fcaeb26d9bdfd00918195570b1f7482&w=1060"
+              alt=""
+            />
+            <h3>new model</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377;12,50,000/-</div>
+            <a href="#" class="btn">check out</a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Contact Us</span></h1>
+      <form action="#" class="contact-form">
+        <div class="input-box">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="input-box">
+          <input type="tel" placeholder="Your Phone Number" />
+        </div>
+        <div class="input-box">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 CarMate Lane, Auto City,
+            Pune
+          </p>
+          <p><i class="fas fa-phone"></i> +91 234 567 890</p>
+          <p><i class="fas fa-envelope"></i> support@carmate.com</p>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 CarMate. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
