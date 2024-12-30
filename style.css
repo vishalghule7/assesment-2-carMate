@@ -866,18 +866,13 @@ body {
   gap: 2rem;
 }
 
-.service-card {
+/* .service-card {
   background-color: var(--light-yellow);
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .service-icon {
   font-size: 3rem;
@@ -896,6 +891,58 @@ body {
   font-size: 1.3rem;
   color: var(--light-black);
 }
+
+/* animation */
+.service-card {
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Start below */
+  transition: transform 0.3s ease, opacity 0.35s ease;
+}
+.service-card:hover {
+  /* Move up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.service-card.animate {
+  opacity: 1;
+  transform: translateY(0); /* Settle into position */
+}
+
+.service-card:nth-child(2).animate {
+  transition-delay: 0.2s;
+}
+
+.service-card:nth-child(3).animate {
+  transition-delay: 0.4s;
+}
+
+.service-card:nth-child(4).animate {
+  transition-delay: 0.6s;
+}
+
+.service-card:nth-child(5).animate {
+  transition-delay: 0.8s;
+}
+
+.service-card:nth-child(6).animate {
+  transition-delay: 1s;
+}
+
+/* @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);  
+  }
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -916,11 +963,29 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .services .container {
+    padding: 0 1.2rem;
+  }
   .services .section-title {
-    font-size: 1.5rem;
+    font-size: 3.2rem;
   }
 
   .services .section-description {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .services p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .services .services-grid .service-card i {
+    font-size: 3.8rem;
+  }
+  .services .services-grid .service-card h3 {
+    font-size: 1.7rem;
+  }
+  .services .services-grid .service-card {
+    margin-top: 2.4rem;
   }
 }
