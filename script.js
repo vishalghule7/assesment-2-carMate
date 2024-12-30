@@ -105,11 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Select all buttons within the vehicles section
   const buttons = document.querySelectorAll(".featured .btn");
 
-  // Add click event listener to each button
   buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default link behavior
-      window.location.href = "details.html"; // Navigate to car details page
+      event.preventDefault(); //
+      window.location.href = "details.html";
     });
   });
 });
@@ -117,15 +116,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const serviceCards = document.querySelectorAll(".service-card");
 
   const observerOptions = {
-    root: null, // Uses the viewport as the root
-    threshold: 0.1, // Trigger when 10% of the card is visible
+    root: null,
+    threshold: 0.15,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animate");
-        observer.unobserve(entry.target); // Stop observing once animated
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
